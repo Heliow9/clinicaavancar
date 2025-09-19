@@ -1,0 +1,88 @@
+/* Reset/normalize enxuto */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111827; /* gray-900 */
+  background: #fff; /* tema claro */
+}
+
+/* Tipografia base */
+h1, h2 { margin: 0 0 .5rem; line-height: 1.2; }
+p { margin: 0 0 1rem; color: #4b5563; } /* gray-600 */
+
+/* Links sem sublinhado por padrão */
+a { text-decoration: none; color: #2563eb; }          /* blue-600 */
+a:hover { color: #1d4ed8; }                           /* blue-700 */
+
+/* Layout */
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+/* Banner topo */
+.topbar {
+  background: #eff6ff;            /* blue-50 */
+  border-bottom: 1px solid #dbeafe;/* blue-100 */
+  color: #1e40af;                  /* blue-800 */
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 0;
+}
+
+/* Header */
+.header { padding: 32px 0 12px; text-align: center; }
+.logo-wrap {
+  width: 128px; height: 128px; margin: 0 auto 12px;
+  border-radius: 999px; overflow: hidden;
+  background: #fff; border: 2px solid #e5e7eb; /* gray-200 */
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+.logo { width: 100%; height: 100%; object-fit: contain; }
+
+/* Card principal */
+.card {
+  background: linear-gradient(#fff, #fafafa);
+  border: 1px solid #e5e7eb;      /* gray-200 */
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* Countdown */
+.pills { display: flex; justify-content: center; gap: 12px; margin: 10px 0 16px; flex-wrap: nowrap; }
+.pill {
+  min-width: 76px; padding: 10px 14px; border-radius: 12px;
+  background: #f3f4f6;            /* gray-100 */
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.pill .val { font-size: 22px; font-weight: 700; color: #111827; display:block; }
+.pill .lab { font-size: 11px; letter-spacing: .6px; text-transform: uppercase; color: #6b7280; }
+
+/* Botões */
+.btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 42px; padding: 0 18px; border-radius: 10px; font-weight: 600;
+  border: 1px solid transparent; box-shadow: 0 6px 14px rgba(0,0,0,.06);
+}
+.btn.primary { background: #2563eb; color: #fff; }     /* blue-600 */
+.btn.primary:hover { background: #1d4ed8; }            /* blue-700 */
+.btn.ghost  { background: #fff; color: #111827; border-color: #d1d5db; } /* gray-300 */
+.btn.ghost:hover { background: #f3f4f6; }
+
+/* Conteúdo institucional */
+.about {
+  text-align: justify;     /* 👈 justifica */
+  line-height: 1.6;        /* entrelinha confortável */
+  font-size: 15px;
+  color: #374151;          /* gray-700 */
+  max-width: 650px;
+  margin: 0 auto 1.5rem;
+  padding: 0 12px;
+}
+
+
+/* Footer */
+.footer { text-align: center; color: #6b7280; font-size: 14px; padding: 24px 0 32px; }
